@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- 
+        This document represents a simple photo gallery webpage.
+        Features:
+        - A visually appealing gallery showcasing black-and-white photographs.
+        - Lightbox functionality for enlarged image previews.
+        - Responsive design using Bootstrap grid system.
+        Dependencies:
+        - Bootstrap CSS for styling.
+        - External stylesheet 'style.css' for custom styling.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="text-white bg-dark">
+    <!-- 
+        Header Section:
+        - Contains the title and description of the gallery.
+        - Styled with Bootstrap classes for spacing and typography.
+    -->
+    <header class="py-5">
+        <h1 class="fs-1">MONOCHROME MAGIC</h1>
+        <h2 class="fs-6 fw-lighter">Explore the timeless elegance of black-and-white photography</h2>
+        <h2 class="fs-6 fw-lighter">Where black-and-white tells the story</h2>
+    </header>
+
+    <!-- 
+        Gallery Section:
+        - Displays a grid of images with responsive columns.
+        - Includes a lightbox feature for enlarged views.
+        - Uses Bootstrap's grid system for responsiveness.
+    -->
+
+    <section class="row g-3 px-4">
+        <!-- 
+            Gallery Item:
+            - Each item includes a thumbnail image wrapped in a label for lightbox functionality.
+            - The lightbox feature is implemented using hidden checkboxes.
+        -->
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image1" class="lightbox-toggle" />
+            <label for="image1">
+                <img src="images/image1.jpeg" alt="Gallery Image 1" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image1" class="lightbox-close"></label>
+                <img src="images/image1.jpeg" alt="Gallery Image 1">
+            </div>
+        </div>
+    
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image2" class="lightbox-toggle" />
+            <label for="image2">
+                <img src="images/image2.jpeg" alt="Gallery Image 2" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image2" class="lightbox-close"></label>
+                <img src="images/image2.jpeg" alt="Gallery Image 2">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image3" class="lightbox-toggle" />
+            <label for="image3">
+                <img src="images/image3.jpeg" alt="Gallery Image 3" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image3" class="lightbox-close"></label>
+                <img src="images/image3.jpeg" alt="Gallery Image 3">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image4" class="lightbox-toggle" />
+            <label for="image4">
+                <img src="images/image4.jpeg" alt="Gallery Image 4" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image4" class="lightbox-close"></label>
+                <img src="images/image4.jpeg" alt="Gallery Image 4">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image5" class="lightbox-toggle" />
+            <label for="image5">
+                <img src="images/image5.jpeg" alt="Gallery Image 5" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image5" class="lightbox-close"></label>
+                <img src="images/image5.jpeg" alt="Gallery Image 5">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image6" class="lightbox-toggle" />
+            <label for="image6">
+                <img src="images/image6.jpeg" alt="Gallery Image 6" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image6" class="lightbox-close"></label>
+                <img src="images/image6.jpeg" alt="Gallery Image 6">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image7" class="lightbox-toggle" />
+            <label for="image7">
+                <img src="images/image7.jpeg" alt="Gallery Image 7" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image7" class="lightbox-close"></label>
+                <img src="images/image7.jpeg" alt="Gallery Image 7">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image8" class="lightbox-toggle" />
+            <label for="image8">
+                <img src="images/image8.jpeg" alt="Gallery Image 8" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image8" class="lightbox-close"></label>
+                <img src="images/image8.jpeg" alt="Gallery Image 8">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image9" class="lightbox-toggle" />
+            <label for="image9">
+                <img src="images/image9.jpeg" alt="Gallery Image 9" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image9" class="lightbox-close"></label>
+                <img src="images/image9.jpeg" alt="Gallery Image 9">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image10" class="lightbox-toggle" />
+            <label for="image10">
+                <img src="images/image10.jpeg" alt="Gallery Image 10" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image10" class="lightbox-close"></label>
+                <img src="images/image10.jpeg" alt="Gallery Image 10">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image11" class="lightbox-toggle" />
+            <label for="image11">
+                <img src="images/image11.jpeg" alt="Gallery Image 11" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image11" class="lightbox-close"></label>
+                <img src="images/image11.jpeg" alt="Gallery Image 11">
+            </div>
+        </div>
+
+        
+        <div class="col-12 col-sm-6 col-md-4">
+            <input type="checkbox" id="image12" class="lightbox-toggle" />
+            <label for="image12">
+                <img src="images/image12.jpeg" alt="Gallery Image 12" class="img-fluid gallery-image">
+            </label>
+            <div class="lightbox">
+                <label for="image12" class="lightbox-close"></label>
+                <img src="images/image12.jpeg" alt="Gallery Image 12">
+            </div>
+        </div>    
+    </section>
+    
+    <!-- 
+        Footer Section:
+        - Displays contact information and copyright notice.
+        - Styled with Bootstrap classes for spacing.
+    -->
+    <footer class="py-5">
+        <p>Phone: +60 13-294 3132 | Email: mrullldhm94@gmail.com</p>
+        <p>&copy; 2024 Amirul Adham. All rights reserved.</p> 
+    </footer>
+
+    <!-- 
+        Scripts:
+        - Includes Bootstrap's JavaScript for responsive and interactive components.
+        - Uses integrity and crossorigin attributes for secure and reliable loading.
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
